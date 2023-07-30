@@ -54,7 +54,7 @@
       "options": {
         "buildTarget": "react-remote:build",
         "hmr": true,
-        "port": 4200
+        "port": 4201
       },
       "configurations": {
         "development": {
@@ -92,7 +92,7 @@
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "react-remote:build",
-        "port": 4200
+        "port": 4201
       },
       "configurations": {
         "development": {
