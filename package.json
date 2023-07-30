@@ -5,7 +5,8 @@
   "scripts": {
     "start:react": "nx serve react-host",
     "start:angular": "nx serve angular-host",
-    "start:react:build": "nx build react-host"
+    "start:react:build": "nx build react-host",
+    "start:angular:build": "nx build angular-host"
   },
   "private": true,
   "devDependencies": {
@@ -63,6 +64,7 @@
     "@angular/common": "~16.1.0",
     "@angular/compiler": "~16.1.0",
     "@angular/core": "~16.1.0",
+    "@angular/elements": "^16.1.7",
     "@angular/forms": "~16.1.0",
     "@angular/platform-browser": "~16.1.0",
     "@angular/platform-browser-dynamic": "~16.1.0",

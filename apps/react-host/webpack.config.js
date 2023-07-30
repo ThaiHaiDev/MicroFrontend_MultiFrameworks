@@ -15,7 +15,8 @@ module.exports = composePlugins(
   withModuleFederation({
     ...config,
     remotes: [
-      ['react-remote', 'http://localhost:4201/']
+      ['react-remote', 'http://localhost:4201/'],
+      ['angular-remote', 'http://localhost:4202/remoteEntry.js']
     ]
   })
 );

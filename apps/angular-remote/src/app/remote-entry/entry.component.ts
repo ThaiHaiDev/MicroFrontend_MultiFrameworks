@@ -1,7 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'micro-fe-angular-remote-entry',
-  template: `<micro-fe-nx-welcome></micro-fe-nx-welcome>`,
+  selector: 'angular-remote-root',
+  templateUrl: './entry.component.html',
 })
-export class RemoteEntryComponent {}
+export class RemoteEntryComponent implements OnInit {
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    this.router.initialNavigation(); // Manually triggering initial navigation for @angular/elements
+  }
+}
