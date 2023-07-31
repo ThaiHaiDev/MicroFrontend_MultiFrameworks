@@ -16,7 +16,7 @@ module.exports = composePlugins(
     ...config,
     remotes: [
       ['react-remote', 'http://localhost:4201/'],
-      ['angular-module', 'http://localhost:4203/remoteEntry.mjs']
+      // ['angular-module', 'http://localhost:4203/remoteEntry.mjs']
     ],
     headers: {
       "Access-Control-Allow-Origin": "*",

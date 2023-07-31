@@ -1,11 +1,13 @@
 import * as React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 
+import AppNext from '../../../next/app/layout';
+import TestComponent from '../../../next/app/page';
 import Home from './home/home';
 import IFrame from './i-frame/i-frame';
 import MultipleApps from './multiple-apps/multiple-apps';
-import NxWelcome from './nx-welcome';
 // import { detect } from 'detect-browser';
+import NxWelcome from './nx-welcome';
 import ShadowWrapper from './wrapper/shadow-wrapper';
 import Wrapper from './wrapper/wrapper';
 
@@ -51,6 +53,14 @@ export function App() {
               </ul> */}
             </li>
             <li>
+              <Link to="/next-remote">Next remote</Link>
+              {/* <ul>
+                <li>
+                  <a href="/angular-remote/material">Material</a>
+                </li>
+              </ul> */}
+            </li>
+            <li>
               <Link to="/react-remote">React remote</Link>
               <ul>
                 <li>
@@ -83,6 +93,12 @@ export function App() {
                   importName="react-remote"
                   elementName="react-remote-root"
                 />
+              }
+            />
+            <Route
+              path="/next-remote/*"
+              element={
+               <AppNext><TestComponent /></AppNext>
               }
             />
             {/* <Route

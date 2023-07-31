@@ -5,6 +5,7 @@
   "scripts": {
     "start:react": "nx serve react-host --open --devRemotes=angular-remote,react-remote",
     "start:angular": "nx serve angular-host",
+    "start:next": "nx serve next --open",
     "start:react:build": "nx build react-host",
     "start:angular:build": "nx build angular-host",
     "clear": "nx clear-cache"

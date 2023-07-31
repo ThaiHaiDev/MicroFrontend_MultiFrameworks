@@ -2,4 +2,5 @@
 // Example declare module 'about/Module';
 
 declare module 'react-remote/Module';
-declare module 'angular-module/Module';
+declare module 'next/Module';
+// declare module 'angular-module/Module';
