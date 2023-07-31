@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start:react": "nx serve react-host",
+    "start:react": "nx serve react-host --open --devRemotes=angular-remote,react-remote",
     "start:angular": "nx serve angular-host",
     "start:react:build": "nx build react-host",
     "start:angular:build": "nx build angular-host"

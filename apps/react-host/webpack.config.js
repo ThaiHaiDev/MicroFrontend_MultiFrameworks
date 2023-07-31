@@ -16,7 +16,12 @@ module.exports = composePlugins(
     ...config,
     remotes: [
       ['react-remote', 'http://localhost:4201/'],
-      ['angular-remote', 'http://localhost:4202/remoteEntry.js']
-    ]
+      ['angular-module', 'http://localhost:4203/remoteEntry.mjs']
+    ],
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+      "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+    }
   })
 );

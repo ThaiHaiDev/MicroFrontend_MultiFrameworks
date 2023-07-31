@@ -38,7 +38,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
     CommonModule,
     RouterModule.forRoot([
       {
-        path: 'angular-module',
+        path: 'angular-remote',
         component: NxWelcomeComponent,
       }
     ]),
