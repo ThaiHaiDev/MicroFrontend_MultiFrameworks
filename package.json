@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "node node_modules/@nx-plus/vue/patch-nx-dep-graph.js",
-    "dev:react": "nx serve shell",
-    "dev:vue": "nx serve app-vue"
+    "start:react": "nx serve react-host",
+    "start:vue": "nx serve app-vue"
   },
   "private": true,
   "devDependencies": {
