@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'vue-app',
+  displayName: 'app-vue',
   preset: '../../jest.preset.js',
   transform: {
     '^.+.vue$': '@vue/vue2-jest',
@@ -8,16 +8,16 @@ module.exports = {
     '^.+.tsx?$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'vue', 'js', 'json'],
-  coverageDirectory: '../../coverage/apps/vue-app',
+  coverageDirectory: '../../coverage/apps/app-vue',
   snapshotSerializers: ['jest-serializer-vue'],
   globals: {
     'ts-jest': {
-      tsconfig: 'apps/vue-app/tsconfig.spec.json',
-      babelConfig: 'apps/vue-app/babel.config.js',
+      tsconfig: 'apps/app-vue/tsconfig.spec.json',
+      babelConfig: 'apps/app-vue/babel.config.js',
     },
     'vue-jest': {
-      tsConfig: 'apps/vue-app/tsconfig.spec.json',
-      babelConfig: 'apps/vue-app/babel.config.js',
+      tsConfig: 'apps/app-vue/tsconfig.spec.json',
+      babelConfig: 'apps/app-vue/babel.config.js',
     },
   },
 };

@@ -1,16 +1,16 @@
 {
-  "name": "vue-app",
+  "name": "app-vue",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "apps/vue-app/src",
+  "sourceRoot": "apps/app-vue/src",
   "targets": {
     "build": {
       "executor": "@nx-plus/vue:browser",
       "options": {
-        "dest": "dist/apps/vue-app",
-        "index": "apps/vue-app/public/index.html",
-        "main": "apps/vue-app/src/main.ts",
-        "tsConfig": "apps/vue-app/tsconfig.app.json"
+        "dest": "dist/apps/app-vue",
+        "index": "apps/app-vue/public/index.html",
+        "main": "apps/app-vue/src/main.ts",
+        "tsConfig": "apps/app-vue/tsconfig.app.json"
       },
       "configurations": {
         "production": {
@@ -27,27 +27,33 @@
     "serve": {
       "executor": "@nx-plus/vue:dev-server",
       "options": {
-        "browserTarget": "vue-app:build"
+        "browserTarget": "app-vue:build"
       },
       "configurations": {
         "production": {
-          "browserTarget": "vue-app:build:production"
+          "browserTarget": "app-vue:build:production"
         }
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/vue-app/**/*.{ts,tsx,vue}"]
+        "lintFilePatterns": ["apps/app-vue/**/*.{ts,tsx,vue}"]
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/vue-app/jest.config.ts",
+        "jestConfig": "apps/app-vue/jest.config.ts",
         "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
       }
     }
   },
