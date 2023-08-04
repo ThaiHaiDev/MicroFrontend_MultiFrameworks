@@ -1,4 +1,4 @@
 module.exports = {
   name: 'angular-host',
-  remotes: [],
+  remotes: ['angular'],
 };
