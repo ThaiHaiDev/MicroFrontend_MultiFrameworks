@@ -12,5 +12,10 @@ const config = {
 module.exports = composePlugins(
   withNx(),
   withReact(),
-  withModuleFederation(config)
+  withModuleFederation({
+    ...config,
+    remotes: [
+      ['react-remote', 'http://localhost:4203/'],
+    ]
+  })
 );
