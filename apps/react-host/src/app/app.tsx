@@ -1,8 +1,8 @@
 import * as React from 'react';
+import { Link, Route, Routes } from 'react-router-dom';
 
 import NxWelcome from './nx-welcome';
-
-import { Link, Route, Routes } from 'react-router-dom';
+import Wrapper from './wrapper/wrapper';
 
 const ReactRemote = React.lazy(() => import('react-remote/Module'));
 
@@ -19,7 +19,16 @@ export function App() {
       </ul>
       <Routes>
         <Route path="/" element={<NxWelcome title="react-host" />} />
-        <Route path="/react-remote" element={<ReactRemote />} />
+        <Route
+              path="/react-remote/*"
+              element={
+                <Wrapper
+                  importName="react-remote"
+                  elementName="react-remote-root"
+                />
+              }
+            />
+        {/* <Route path="/react-remote" element={<ReactRemote />} /> */}
       </Routes>
     </React.Suspense>
   );
