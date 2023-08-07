@@ -1,8 +1,5 @@
 import Wrapper from '../wrapper/wrapper';
-
-
 import styles from './multiple-apps.module.css';
-
 
 /* eslint-disable-next-line */
 export interface MultipleAppsProps {}

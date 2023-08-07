@@ -4,8 +4,6 @@ import { Link, Route, Routes } from 'react-router-dom';
 import NxWelcome from './nx-welcome';
 import Wrapper from './wrapper/wrapper';
 
-const ReactRemote = React.lazy(() => import('react-remote/Module'));
-
 export function App() {
   return (
     <React.Suspense fallback={null}>
@@ -14,7 +12,10 @@ export function App() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/react-remote">ReactRemote</Link>
+          <Link to="/react-remote">React Remote</Link>
+        </li>
+        <li>
+          <Link to="/angular-remote">Angular Remote</Link>
         </li>
       </ul>
       <Routes>
@@ -25,6 +26,15 @@ export function App() {
                 <Wrapper
                   importName="react-remote"
                   elementName="react-remote-root"
+                />
+              }
+            />
+        <Route
+              path="/angular-remote/*"
+              element={
+                <Wrapper
+                  importName="angular-remote"
+                  elementName="angular-remote-root"
                 />
               }
             />
