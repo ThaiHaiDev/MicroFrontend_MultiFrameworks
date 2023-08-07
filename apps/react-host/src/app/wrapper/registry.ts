@@ -1,9 +1,9 @@
 export interface Registry {
-  // 'angular-module': () => Promise<unknown>;
+  'angular-remote': () => Promise<unknown>;
   'react-remote': () => Promise<unknown>;
 }
 
 export const registry: Registry = {
-  // 'angular-module': () => import('angular-module/Module'),
+  'angular-remote': () => import('angular-remote/Module'),
   'react-remote': () => import('react-remote/Module'),
 };
