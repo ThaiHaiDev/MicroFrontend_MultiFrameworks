@@ -1,0 +1,16 @@
+{
+  "name": "address",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/address/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/address/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}
