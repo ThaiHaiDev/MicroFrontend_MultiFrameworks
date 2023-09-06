@@ -8,6 +8,7 @@
         >vue-cli documentation</a
       >.
     </p>
+    <el-button type="success">Success</el-button>
     <h3>Installed CLI Plugins</h3>
     <ul>
       <li>
