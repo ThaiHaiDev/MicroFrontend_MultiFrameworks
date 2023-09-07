@@ -82,7 +82,6 @@
 <script lang="ts">
 import Vue from 'vue';
 import ButtonVue from '../../../../libs/libs-vue/button/src/lib/HelloWorld.vue';
-// import ButtonVue from '../../../../libs/my-library/src/lib/libs-vue/HelloWorld.vue';
 
 export default Vue.extend({
   name: 'HelloWorld',

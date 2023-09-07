@@ -1,3 +1,4 @@
+import LibsNextSelected from '../../../libs/libs-next/selected/src/lib/libs-next-selected'
 import styles from './page.module.scss';
 
 export default async function Index() {
@@ -16,7 +17,7 @@ export default async function Index() {
               Welcome next-app 👋
             </h1>
           </div>
-
+          <LibsNextSelected />
           <div id="hero" className="rounded">
             <div className="text-container">
               <h2>
