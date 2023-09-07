@@ -17,6 +17,9 @@ module.exports = composePlugins(
     remotes: [
       ['angular-remote', 'http://localhost:4201/remoteEntry.mjs'],
       ['react-remote', 'http://localhost:4203/'],
-    ]
-  })
+    ],
+    resolve: {
+      extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    }
+  }),
 );

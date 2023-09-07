@@ -4,6 +4,6 @@ export interface Registry {
 }
 
 export const registry: Registry = {
-  'angular-remote': () => import('angular-remote/Module'),
-  'react-remote': () => import('react-remote/Module'),
+  'angular-remote': () => import('../../../../angular-remote/src/app/remote-entry/entry.module'),
+  'react-remote': () => import('../../../../react-remote/src/remote-entry'),
 };
