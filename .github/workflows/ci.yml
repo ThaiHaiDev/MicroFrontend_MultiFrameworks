@@ -13,4 +13,4 @@ jobs:
         with:
           fetch-depth: 0
       - uses: nrwl/nx-set-shas@v3
-      - run: deploy:react-host
+      - run: npm run deploy:react-host
