@@ -4,12 +4,12 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 
-import styles from './address.module.scss';
+import styles from './libs-react-selected.module.scss';
 
 /* eslint-disable-next-line */
-export interface AddressProps {}
+export interface LibsReactSelectedProps {}
 
-export function Address(props: AddressProps) {
+export function LibsReactSelected(props: LibsReactSelectedProps) {
   const [age, setAge] = React.useState('');
 
   const handleChange = (event: SelectChangeEvent) => {
@@ -17,7 +17,7 @@ export function Address(props: AddressProps) {
   };
 
   return (
-    <div>
+    <div className={styles['container']}>
       <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
       <InputLabel id="demo-select-small-label">Age</InputLabel>
       <Select
@@ -39,4 +39,4 @@ export function Address(props: AddressProps) {
   );
 }
 
-export default Address;
+export default LibsReactSelected;

@@ -8,7 +8,7 @@
         >vue-cli documentation</a
       >.
     </p>
-    <el-button type="success">Success</el-button>
+    <ButtonVue />
     <h3>Installed CLI Plugins</h3>
     <ul>
       <li>
@@ -77,16 +77,21 @@
       </li>
     </ul>
   </div>
-</template>
+</template> 
 
 <script lang="ts">
 import Vue from 'vue';
+import ButtonVue from '../../../../libs/libs-vue/button/src/lib/HelloWorld.vue';
+// import ButtonVue from '../../../../libs/my-library/src/lib/libs-vue/HelloWorld.vue';
 
 export default Vue.extend({
   name: 'HelloWorld',
   props: {
     msg: String,
   },
+  components: {
+    ButtonVue
+  }
 });
 </script>
 

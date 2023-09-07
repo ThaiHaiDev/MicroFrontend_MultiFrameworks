@@ -1,13 +1,13 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { Address } from '@check/address';
-import styles from './app.module.scss';
+import { LibsReactSelected } from '@check/libs-react/selected';
+
 import NxWelcome from './nx-welcome';
 
 export function App() {
   return (
     <div>
       <NxWelcome title="react-remote" />
-      <Address />
+      <LibsReactSelected />
     </div>
   );
 }

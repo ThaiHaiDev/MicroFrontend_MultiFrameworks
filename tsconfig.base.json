@@ -15,7 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@check/address": ["libs/address/src/index.ts"]
+      "@check/address": ["libs/address/src/index.ts"],
+      "@check/libs-react/selected": ["libs/libs-react/selected/src/index.ts"],
+      "@undefined/libs-vue/button": ["libs/libs-vue/button/src/index.ts"],
+      "@undefined/my-library": ["libs/my-library/src/index.ts"],
+      "@undefined/vue-libs/button": ["libs/vue-libs/button/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
