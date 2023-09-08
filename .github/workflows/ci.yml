@@ -20,6 +20,14 @@ jobs:
         with:
           node-version: 18
 
+      - name: Cache Nx CLI
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm-global # Adjust the path as needed
+          key: nx-cli-${{ runner.os }}
+          restore-keys: |
+            nx-cli-
+
       - name: Install Nx CLI
         run: npm install -g @nrwl/cli
 
