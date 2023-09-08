@@ -32,6 +32,7 @@ jobs:
         run: npm install -g @nrwl/cli
 
       - uses: mansagroup/nrwl-nx-action@v3
+        run: npm install nx
         with:
           targets: lint,test,build
           all: 'true'
