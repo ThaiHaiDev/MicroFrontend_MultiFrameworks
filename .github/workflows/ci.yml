@@ -15,6 +15,9 @@ jobs:
           fetch-depth: 0
       - uses: nrwl/nx-set-shas@v3
 
+      - name: Install Nx CLI
+        run: npm install -g @nrwl/cli
+
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
 
