@@ -25,4 +25,4 @@ jobs:
       - name: Deploy React App to Firebase
         run: npm run deploy:react-host
 
-        # 1
+        # 2
