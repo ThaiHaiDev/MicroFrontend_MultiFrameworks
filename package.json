@@ -8,7 +8,7 @@
     "start:vue": "nx serve app-vue",
     "start:angular": "nx serve angular-host",
     "start:next": "nx serve next-app",
-    "deploy:react-host": "firebase deploy"
+    "deploy:react-host": "nx build react-host && firebase deploy"
   },
   "private": true,
   "devDependencies": {
