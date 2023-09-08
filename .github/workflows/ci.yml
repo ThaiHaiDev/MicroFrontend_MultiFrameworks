@@ -30,6 +30,9 @@ jobs:
         run: |
           firebase use --token FIREBASE_TOKEN
 
+      - name: Build React App with Nx
+        run: nx build react-host
+
       - name: Deploy React App to Firebase
         run: npm run deploy:react-host
 
