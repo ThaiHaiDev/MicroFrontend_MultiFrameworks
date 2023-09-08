@@ -39,7 +39,7 @@ jobs:
           firebase use --token FIREBASE_TOKEN
 
       - name: Build React App with Nx
-        run: path/to/npm/bin/nx build react-host
+        run: /home/runner/.npm-global/bin/nx build react-host
 
       - name: Deploy React App to Firebase
         run: npm run deploy:react-host
