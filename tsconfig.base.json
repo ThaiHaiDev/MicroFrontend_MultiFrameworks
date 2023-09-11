@@ -20,6 +20,7 @@
       "@check/libs-next/selected/server": [
         "libs/libs-next/selected/src/server.ts"
       ],
+      "@check/libs-react/button": ["libs/libs-react/button/src/index.ts"],
       "@check/libs-react/selected": ["libs/libs-react/selected/src/index.ts"],
       "@undefined/libs-vue/button": ["libs/libs-vue/button/src/index.ts"],
       "@undefined/my-library": ["libs/my-library/src/index.ts"],

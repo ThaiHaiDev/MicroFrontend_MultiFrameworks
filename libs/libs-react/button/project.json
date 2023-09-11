@@ -1,0 +1,39 @@
+{
+  "name": "libs-react-button",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/libs-react/button/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/libs-react/button/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "builder": "@nrwl/jest:jest",
+      "options": {
+        "jestConfig": "libs/libs-react/button/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/libs/libs-react/button"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    }
+  }
+}

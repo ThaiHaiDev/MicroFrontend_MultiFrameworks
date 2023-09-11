@@ -49,5 +49,3 @@ jobs:
 
       - name: Deploy React App to Firebase
         run: npm run build:react
-
-        # 2
