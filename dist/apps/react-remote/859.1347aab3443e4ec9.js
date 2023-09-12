@@ -1,0 +1,1 @@
+(self.webpackChunkreact_remote=self.webpackChunkreact_remote||[]).push([[859],{1859:(e,r,t)=>{t.r(r);var s=t(338),c=t.n(s),n=t(607),a=t(4504),o=t(2322);class l extends HTMLElement{connectedCallback(){c().render((0,o.jsx)(n.BrowserRouter,{children:(0,o.jsx)(a.Z,{})}),this)}}customElements.define("react-remote-root",l)}}]);
