@@ -36,10 +36,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: mansagroup/nrwl-nx-action@v3
-        with:
-          targets: lint,build,deploy
-
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
 

@@ -12,10 +12,10 @@ export function App() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/react-remote-module-1">ReactRemoteModule1</Link>
+          <Link to="/react-remote-module-1">React Remote Module 1</Link>
         </li>
         <li>
-          <Link to="/react-remote-module-2">ReactRemoteModule2</Link>
+          <Link to="/react-remote-module-2">React Remote Module 2</Link>
         </li>
         <li>
           <Link to="/react-remote">React Remote</Link>
