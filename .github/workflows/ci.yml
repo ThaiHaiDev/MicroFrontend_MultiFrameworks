@@ -44,4 +44,4 @@ jobs:
           firebase use --token FIREBASE_TOKEN
 
       - name: Deploy React App to Firebase
-        run: npm run build:react
+        run: npm run deploy:react-host
