@@ -3,7 +3,7 @@
 /***/ "./src/main.ts":
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.all(/* import() */[__webpack_require__.e("vendors-node_modules_react_jsx-dev-runtime_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react"), __webpack_require__.e("src_app_app_tsx"), __webpack_require__.e("src_bootstrap_tsx")]).then(__webpack_require__.bind(__webpack_require__, "./src/bootstrap.tsx"));
+Promise.all(/* import() */[__webpack_require__.e("vendors-node_modules_react_jsx-dev-runtime_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react"), __webpack_require__.e("src_app_app_tsx-webpack_sharing_consume_default_react-dom_react-dom"), __webpack_require__.e("src_bootstrap_tsx")]).then(__webpack_require__.bind(__webpack_require__, "./src/bootstrap.tsx"));
 
 /***/ })
 
@@ -211,6 +211,7 @@ Promise.all(/* import() */[__webpack_require__.e("vendors-node_modules_react_jsx
 /******/ 		switch(name) {
 /******/ 			case "default": {
 /******/ 				register("react-dom", "18.2.0", () => (Promise.all([__webpack_require__.e("vendors-node_modules_react-dom_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react")]).then(() => (() => (__webpack_require__("../../node_modules/react-dom/index.js"))))));
+/******/ 				register("react-router-dom", "6.11.2", () => (Promise.all([__webpack_require__.e("vendors-node_modules_react-router-dom_dist_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react")]).then(() => (() => (__webpack_require__("../../node_modules/react-router-dom/dist/index.js"))))));
 /******/ 				register("react", "18.2.0", () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__("../../node_modules/react/index.js"))))));
 /******/ 			}
 /******/ 			break;
@@ -377,7 +378,7 @@ Promise.all(/* import() */[__webpack_require__.e("vendors-node_modules_react_jsx
 /******/ 		"webpack_sharing_consume_default_react_react": [
 /******/ 			"webpack/sharing/consume/default/react/react"
 /******/ 		],
-/******/ 		"src_bootstrap_tsx": [
+/******/ 		"src_app_app_tsx-webpack_sharing_consume_default_react-dom_react-dom": [
 /******/ 			"webpack/sharing/consume/default/react-dom/react-dom"
 /******/ 		]
 /******/ 	};

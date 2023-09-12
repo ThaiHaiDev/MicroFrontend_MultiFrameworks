@@ -1,4 +1,4 @@
-(self["webpackChunkreact_remote_module_1"] = self["webpackChunkreact_remote_module_1"] || []).push([["src_app_app_tsx"],{
+(self["webpackChunkreact_remote_module_2"] = self["webpackChunkreact_remote_module_2"] || []).push([["src_app_app_tsx-webpack_sharing_consume_default_react-dom_react-dom"],{
 
 /***/ "./src/app/app.tsx":
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -10,13 +10,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _nx_welcome__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/app/nx-welcome.tsx");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("../../node_modules/react/jsx-dev-runtime.js");
-var _jsxFileName = "D:\\HCMUTE\\Hai_Hoc_Ngu\\MicroFrontend\\check\\apps\\react-remote-module-1\\src\\app\\app.tsx"; // eslint-disable-next-line @typescript-eslint/no-unused-vars
+var _jsxFileName = "D:\\HCMUTE\\Hai_Hoc_Ngu\\MicroFrontend\\check\\apps\\react-remote-module-2\\src\\app\\app.tsx"; // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
 
 function App() {
   return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("div", {
     children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)(_nx_welcome__WEBPACK_IMPORTED_MODULE_0__["default"], {
-      title: "react-remote-module-1"
+      title: "react-remote-module-2"
     }, void 0, false, {
       fileName: _jsxFileName,
       lineNumber: 9,
@@ -41,7 +41,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("../../node_modules/react/jsx-dev-runtime.js");
-var _jsxFileName = "D:\\HCMUTE\\Hai_Hoc_Ngu\\MicroFrontend\\check\\apps\\react-remote-module-1\\src\\app\\nx-welcome.tsx";
+var _jsxFileName = "D:\\HCMUTE\\Hai_Hoc_Ngu\\MicroFrontend\\check\\apps\\react-remote-module-2\\src\\app\\nx-welcome.tsx";
 
 
 /*
@@ -1311,4 +1311,4 @@ function NxWelcome({
 /***/ })
 
 }])
-//# sourceMappingURL=src_app_app_tsx.js.map
+//# sourceMappingURL=src_app_app_tsx-webpack_sharing_consume_default_react-dom_react-dom.js.map

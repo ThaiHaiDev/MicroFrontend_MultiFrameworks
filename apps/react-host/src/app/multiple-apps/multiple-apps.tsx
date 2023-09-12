@@ -9,6 +9,8 @@ export function MultipleApps(props: MultipleAppsProps) {
     <div className={styles['container']}>
       <Wrapper importName="react-remote" elementName="react-remote-root" />
       <Wrapper importName="angular-remote" elementName="angular-remote-root" />
+      <Wrapper importName="react-remote-module-1" elementName="react-remote-module-1-root" />
+      <Wrapper importName="react-remote-module-2" elementName="react-remote-module-2-root" />
     </div>
   );
 }

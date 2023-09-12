@@ -5,7 +5,7 @@
 
 var moduleMap = {
 	"./Module": () => {
-		return Promise.all([__webpack_require__.e("vendors-node_modules_react_jsx-dev-runtime_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react"), __webpack_require__.e("src_app_app_tsx"), __webpack_require__.e("src_remote-entry_ts")]).then(() => (() => ((__webpack_require__("./src/remote-entry.ts")))));
+		return Promise.all([__webpack_require__.e("vendors-node_modules_react_jsx-dev-runtime_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react"), __webpack_require__.e("src_app_app_tsx-webpack_sharing_consume_default_react-dom_react-dom"), __webpack_require__.e("src_remote-entry_tsx")]).then(() => (() => ((__webpack_require__("./src/remote-entry.tsx")))));
 	}
 };
 var get = (module, getScope) => {
@@ -73,6 +73,18 @@ __webpack_require__.d(exports, {
 /******/ __webpack_require__.c = __webpack_module_cache__;
 /******/ 
 /************************************************************************/
+/******/ /* webpack/runtime/compat get default export */
+/******/ (() => {
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = (module) => {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			() => (module['default']) :
+/******/ 			() => (module);
+/******/ 		__webpack_require__.d(getter, { a: getter });
+/******/ 		return getter;
+/******/ 	};
+/******/ })();
+/******/ 
 /******/ /* webpack/runtime/define property getters */
 /******/ (() => {
 /******/ 	// define getter functions for harmony exports
@@ -229,6 +241,7 @@ __webpack_require__.d(exports, {
 /******/ 		switch(name) {
 /******/ 			case "default": {
 /******/ 				register("react-dom", "18.2.0", () => (Promise.all([__webpack_require__.e("vendors-node_modules_react-dom_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react")]).then(() => (() => (__webpack_require__("../../node_modules/react-dom/index.js"))))));
+/******/ 				register("react-router-dom", "6.11.2", () => (Promise.all([__webpack_require__.e("vendors-node_modules_react-router-dom_dist_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react")]).then(() => (() => (__webpack_require__("../../node_modules/react-router-dom/dist/index.js"))))));
 /******/ 				register("react", "18.2.0", () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__("../../node_modules/react/index.js"))))));
 /******/ 			}
 /******/ 			break;
@@ -387,12 +400,20 @@ __webpack_require__.d(exports, {
 /******/ 	});
 /******/ 	var installedModules = {};
 /******/ 	var moduleToHandlerMapping = {
-/******/ 		"webpack/sharing/consume/default/react/react": () => (loadStrictSingletonVersionCheckFallback("default", "react", [1,18,2,0], () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__("../../node_modules/react/index.js")))))))
+/******/ 		"webpack/sharing/consume/default/react/react": () => (loadStrictSingletonVersionCheckFallback("default", "react", [1,18,2,0], () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__("../../node_modules/react/index.js"))))))),
+/******/ 		"webpack/sharing/consume/default/react-dom/react-dom": () => (loadStrictSingletonVersionCheckFallback("default", "react-dom", [1,18,2,0], () => (__webpack_require__.e("vendors-node_modules_react-dom_index_js").then(() => (() => (__webpack_require__("../../node_modules/react-dom/index.js"))))))),
+/******/ 		"webpack/sharing/consume/default/react-router-dom/react-router-dom": () => (loadStrictSingletonVersionCheckFallback("default", "react-router-dom", [4,6,11,2], () => (__webpack_require__.e("vendors-node_modules_react-router-dom_dist_index_js").then(() => (() => (__webpack_require__("../../node_modules/react-router-dom/dist/index.js")))))))
 /******/ 	};
 /******/ 	// no consumes in initial chunks
 /******/ 	var chunkMapping = {
 /******/ 		"webpack_sharing_consume_default_react_react": [
 /******/ 			"webpack/sharing/consume/default/react/react"
+/******/ 		],
+/******/ 		"src_app_app_tsx-webpack_sharing_consume_default_react-dom_react-dom": [
+/******/ 			"webpack/sharing/consume/default/react-dom/react-dom"
+/******/ 		],
+/******/ 		"src_remote-entry_tsx": [
+/******/ 			"webpack/sharing/consume/default/react-router-dom/react-router-dom"
 /******/ 		]
 /******/ 	};
 /******/ 	__webpack_require__.f.consumes = (chunkId, promises) => {
