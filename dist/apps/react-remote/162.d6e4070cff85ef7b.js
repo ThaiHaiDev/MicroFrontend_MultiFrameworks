@@ -1,1 +1,0 @@
-(self.webpackChunkreact_remote=self.webpackChunkreact_remote||[]).push([[162],{7162:(t,e,n)=>{n.r(e),n.d(e,{LibsReactButton:()=>c});var a=n(2322);function c({label:t,onClick:e}){return(0,a.jsx)("button",{onClick:e,"data-testid":"button",children:t})}}}]);
