@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'micro-fe-root',
+  selector: 'check-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

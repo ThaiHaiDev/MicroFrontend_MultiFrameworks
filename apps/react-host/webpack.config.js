@@ -15,13 +15,13 @@ module.exports = composePlugins(
   withModuleFederation({
     ...config,
     remotes: [
-      ['react-remote', 'http://localhost:4201/'],
-      // ['angular-module', 'http://localhost:4203/remoteEntry.mjs']
+      ['angular-remote', 'http://localhost:4201/remoteEntry.mjs'],
+      ['react-remote', 'http://localhost:4203/'],
+      ['react-remote-module-1', 'http://localhost:4204/'],
+      ['react-remote-module-2', 'http://localhost:4205/'],
     ],
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-      "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+    resolve: {
+      extensions: ['.ts', '.tsx', '.js', '.jsx'],
     }
-  })
+  }),
 );

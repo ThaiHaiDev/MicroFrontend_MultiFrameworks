@@ -4,7 +4,8 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'angular-remote-root',
   templateUrl: './entry.component.html',
-})
+  styleUrls: ['./entry.component.css'],
+}) 
 export class RemoteEntryComponent implements OnInit {
   constructor(private router: Router) {}
 

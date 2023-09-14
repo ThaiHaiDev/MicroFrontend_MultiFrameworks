@@ -9,7 +9,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "microFe",
+            "prefix": "check",
             "style": "camelCase"
           }
         ],
@@ -17,7 +17,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "micro-fe",
+            "prefix": "check",
             "style": "kebab-case"
           }
         ]

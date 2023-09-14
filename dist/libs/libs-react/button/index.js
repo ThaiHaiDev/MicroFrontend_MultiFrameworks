@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const n=require("react/jsx-runtime");function u({label:t,onClick:e}){return n.jsx("button",{onClick:e,"data-testid":"button",children:t})}exports.LibsReactButton=u;

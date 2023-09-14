@@ -1,0 +1,16 @@
+{
+  "name": "libs-next-selected",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/libs-next/selected/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/libs-next/selected/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+.tooltip {
+    &__icon {
+      &:hover {
+        ~ .tooltip__content {
+          display: block;
+        }
+      }
+    }
+    &__content {
+      display: none;
+      &::before {
+        content: '';
+        position: absolute;
+        right: 4px;
+        // left: calc(50%);
+        bottom: -19px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px;
+        border-color: rgb(188,188,188) transparent transparent transparent;
+      }
+    }
+  }
+  
