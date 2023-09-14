@@ -5,7 +5,7 @@
 
 var moduleMap = {
 	"./Module": () => {
-		return Promise.all([__webpack_require__.e("vendors-node_modules_react_jsx-dev-runtime_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react"), __webpack_require__.e("webpack_sharing_consume_default_react-dom_react-dom"), __webpack_require__.e("src_app_app_tsx"), __webpack_require__.e("src_remote-entry_tsx")]).then(() => (() => ((__webpack_require__("./src/remote-entry.tsx")))));
+		return Promise.all([__webpack_require__.e("vendors-node_modules_react_jsx-dev-runtime_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react"), __webpack_require__.e("webpack_sharing_consume_default_react-dom_react-dom"), __webpack_require__.e("src_app_app_tsx"), __webpack_require__.e("src_remote-entry_tsx-src_app_app_module_scss")]).then(() => (() => ((__webpack_require__("./src/remote-entry.tsx")))));
 	}
 };
 var get = (module, getScope) => {
@@ -416,8 +416,8 @@ __webpack_require__.d(exports, {
 /******/ 	var moduleToHandlerMapping = {
 /******/ 		"webpack/sharing/consume/default/react/react": () => (loadStrictSingletonVersionCheckFallback("default", "react", [1,18,2,0], () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__("../../node_modules/react/index.js"))))))),
 /******/ 		"webpack/sharing/consume/default/react-dom/react-dom": () => (loadStrictSingletonVersionCheckFallback("default", "react-dom", [1,18,2,0], () => (__webpack_require__.e("vendors-node_modules_react-dom_index_js").then(() => (() => (__webpack_require__("../../node_modules/react-dom/index.js"))))))),
-/******/ 		"webpack/sharing/consume/default/@check/libs-react/selected/@check/libs-react/selected": () => (loadFallback("default", "@check/libs-react/selected", () => (Promise.all([__webpack_require__.e("vendors-node_modules_mui_material_FormControl_FormControl_js-node_modules_mui_material_InputL-65c652"), __webpack_require__.e("libs_libs-react_selected_src_index_ts-_6d180")]).then(() => (() => (__webpack_require__("../../libs/libs-react/selected/src/index.ts"))))))),
 /******/ 		"webpack/sharing/consume/default/@check/libs-react/button/@check/libs-react/button": () => (loadFallback("default", "@check/libs-react/button", () => (__webpack_require__.e("libs_libs-react_button_src_index_ts-_44360").then(() => (() => (__webpack_require__("../../libs/libs-react/button/src/index.ts"))))))),
+/******/ 		"webpack/sharing/consume/default/@check/libs-react/selected/@check/libs-react/selected": () => (loadFallback("default", "@check/libs-react/selected", () => (Promise.all([__webpack_require__.e("vendors-node_modules_mui_material_FormControl_FormControl_js-node_modules_mui_material_InputL-65c652"), __webpack_require__.e("libs_libs-react_selected_src_index_ts-_6d180")]).then(() => (() => (__webpack_require__("../../libs/libs-react/selected/src/index.ts"))))))),
 /******/ 		"webpack/sharing/consume/default/react-router-dom/react-router-dom": () => (loadStrictSingletonVersionCheckFallback("default", "react-router-dom", [4,6,11,2], () => (__webpack_require__.e("vendors-node_modules_react-router-dom_dist_index_js").then(() => (() => (__webpack_require__("../../node_modules/react-router-dom/dist/index.js")))))))
 /******/ 	};
 /******/ 	// no consumes in initial chunks
@@ -429,10 +429,10 @@ __webpack_require__.d(exports, {
 /******/ 			"webpack/sharing/consume/default/react-dom/react-dom"
 /******/ 		],
 /******/ 		"src_app_app_tsx": [
-/******/ 			"webpack/sharing/consume/default/@check/libs-react/selected/@check/libs-react/selected",
-/******/ 			"webpack/sharing/consume/default/@check/libs-react/button/@check/libs-react/button"
+/******/ 			"webpack/sharing/consume/default/@check/libs-react/button/@check/libs-react/button",
+/******/ 			"webpack/sharing/consume/default/@check/libs-react/selected/@check/libs-react/selected"
 /******/ 		],
-/******/ 		"src_remote-entry_tsx": [
+/******/ 		"src_remote-entry_tsx-src_app_app_module_scss": [
 /******/ 			"webpack/sharing/consume/default/react-router-dom/react-router-dom"
 /******/ 		]
 /******/ 	};
@@ -522,7 +522,7 @@ __webpack_require__.d(exports, {
 /******/ 	};
 /******/ 	
 /******/ 	__webpack_require__.f.miniCss = (chunkId, promises) => {
-/******/ 		var cssChunks = {"libs_libs-react_selected_src_index_ts-_6d181":1,"libs_libs-react_selected_src_index_ts-_6d180":1};
+/******/ 		var cssChunks = {"libs_libs-react_selected_src_index_ts-_6d181":1,"src_remote-entry_tsx-src_app_app_module_scss":1,"libs_libs-react_selected_src_index_ts-_6d180":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(() => {

@@ -1,29 +1,33 @@
 import * as React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 
+import styles from './app.module.scss';
 import NxWelcome from './nx-welcome';
 import Wrapper from './wrapper/wrapper';
 
 export function App() {
   return (
     <React.Suspense fallback={null}>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/react-remote-module-1">React Remote Module 1</Link>
-        </li>
-        <li>
-          <Link to="/react-remote-module-2">React Remote Module 2</Link>
-        </li>
-        <li>
-          <Link to="/react-remote">React Remote</Link>
-        </li>
-        <li>
-          <Link to="/angular-remote">Angular Remote</Link>
-        </li>
-      </ul>
+      <div className={styles.sidebar}>
+        <img src='https://uploads-ssl.webflow.com/6385d4dcfa4888244f8d4d04/6425300ee35304df303828ec_logo23-full-b.svg' alt='logo' className={styles.logo} />
+        <ul className={styles.link}>
+          <li className={styles.cardSide}>
+            <Link to="/">Home</Link>
+          </li>
+          <li className={styles.cardSide}>
+            <Link to="/react-remote">React Remote</Link>
+          </li>
+          <li className={styles.cardSide}>
+            <Link to="/react-remote-module-1">React Remote Module 1</Link>
+          </li>
+          <li className={styles.cardSide}>
+            <Link to="/react-remote-module-2">React Remote Module 2</Link>
+          </li>
+          <li className={styles.cardSide}>
+            <Link to="/angular-remote">Angular Remote</Link>
+          </li>
+        </ul>
+      </div>
       <Routes>
         <Route path="/" element={<NxWelcome title="react-host" />} />
         <Route

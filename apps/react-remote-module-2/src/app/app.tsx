@@ -5,8 +5,8 @@ import NxWelcome from './nx-welcome';
 
 export function App() {
   return (
-    <div>
-      <NxWelcome title="react-remote-module-2" />
+    <div className={styles.reactRemoteModule2}>
+      <NxWelcome title="React remote module 2" />
     </div>
   );
 }

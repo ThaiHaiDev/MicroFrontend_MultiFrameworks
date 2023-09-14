@@ -17,7 +17,10 @@ export default async function Index() {
               Welcome next-app 👋
             </h1>
           </div>
-          <LibsNextSelected />
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <p style={{ marginRight: '10px', marginTop: '25px' }}>Libs next use Tailwind:</p>
+            <LibsNextSelected />
+          </div>
           <div id="hero" className="rounded">
             <div className="text-container">
               <h2>

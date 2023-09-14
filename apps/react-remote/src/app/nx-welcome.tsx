@@ -5,6 +5,9 @@
  Delete this file and get started with your project!
  * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
+import { LibsReactButton } from '@check/libs-react/button';
+import { LibsReactSelected } from '@check/libs-react/selected';
+
 export function NxWelcome({ title }: { title: string }) {
   return (
     <>
@@ -422,7 +425,15 @@ export function NxWelcome({ title }: { title: string }) {
               Welcome {title} 👋
             </h1>
           </div>
-
+          <div style={{ display: 'flex', alignItems: 'center', marginTop: '5px' }}>
+            <p style={{ marginRight: '5px' }}>Libs react use MUI v5:</p>
+            <LibsReactSelected />
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', marginTop: '5px' }}>
+            <p style={{ marginRight: '5px' }}>Libs react use Unit test:</p>
+            <LibsReactButton label="Click me" onClick={() => console.log('Unit test')}/>
+          </div>
+         
           <div id="hero" className="rounded">
             <div className="text-container">
               <h2>
